@@ -53,7 +53,7 @@ export const StarBackground = () => {
         size: Math.random() * 1.5 + 0.8,
         x: Math.random() * 120 - 10, // Allow meteors to start slightly off-screen
         y: Math.random() * 30,
-        delay: Math.random() * 20 + i * 3, // Stagger meteor appearances
+        delay: Math.random() * 20 + i * 3 + 3, // Stagger meteor appearances with 3s initial delay
         animationDuration: Math.random() * 4 + 4,
         intensity: Math.random() * 0.5 + 0.5,
       });

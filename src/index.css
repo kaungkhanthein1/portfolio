@@ -214,17 +214,17 @@
 @utility neon-border {
   @apply border border-primary/50 rounded-lg;
   box-shadow: 
-    0 0 5px hsl(var(--cosmic-purple)),
-    inset 0 0 5px rgba(167, 139, 250, 0.1);
+    0 0 4px hsl(var(--cosmic-purple)),
+    inset 0 0 4px rgba(167, 139, 250, 0.1);
   transition: all 0.3s ease;
 }
 
 .neon-border:hover {
   border-color: hsl(var(--cosmic-purple));
   box-shadow: 
-    0 0 10px hsl(var(--cosmic-purple)),
-    0 0 20px hsl(var(--cosmic-purple)),
-    inset 0 0 10px rgba(167, 139, 250, 0.2);
+    0 0 8px hsl(var(--cosmic-purple)),
+    0 0 16px hsl(var(--cosmic-purple)),
+    inset 0 0 8px rgba(167, 139, 250, 0.2);
 }
 
 @utility star {
