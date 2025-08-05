@@ -40,7 +40,7 @@ export const SkillsSection = () => {
                 "px-5 py-3 rounded-full transition-all duration-300 capitalize font-medium",
                 activeCategory === category
                   ? "cosmic-button text-glow"
-                  : "glassmorphism text-foreground/80 hover:text-cosmic hover:neon-border"
+                  : "glassmorphism text-foreground/80 hover:text-cosmic hover:border-primary/70 hover:shadow-[0_0_8px_rgba(167,139,250,0.4)]"
               )}
             >
               {category}
