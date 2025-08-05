@@ -1,133 +1,124 @@
-# Build a Modern Portfolio Website with React & TailwindCSS
+# 🌌 Kaung Khant Hein – Developer Portfolio Website
 
 <div align="center">
-  <br />
-  <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
-    <img src="./banner.png" alt="Portfolio Website Banner">
-  </a>
-  <br />
-  <div>
-    <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-    <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-    <img src="https://img.shields.io/badge/-Lucide Icons-FD4D4D?style=for-the-badge&logo=lucide" alt="Lucide Icons" />
-    <img src="https://img.shields.io/badge/-Radix UI-9D4EDD?style=for-the-badge&logo=data:image/svg+xml;base64..." alt="Radix UI" />
-  </div>
-  <h3 align="center">Create a Stunning Developer Portfolio with Animations, Dark Mode, and Projects Showcase</h3>
-  <div align="center">
-    Follow the full video tutorial on 
-    <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank"><b>YouTube</b></a>
-  </div>
-  <br />
+  <img src="./banner.png" alt="Portfolio Banner" width="100%" />
+  <br /><br />
+  <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Zustand-ffa500?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-i18next-26A69A?style=for-the-badge" />
 </div>
 
-## 📋 Table of Contents
+<div align="center">
+  <h3>🌠 Modern, Responsive, and Multilingual Portfolio Website</h3>
+  <p>Built to showcase my frontend and app development skills with React, Tailwind, and API integration.</p>
+</div>
 
-1. [Introduction](#-introduction)
+---
+
+## 📌 Table of Contents
+
+1. [About](#-about)
 2. [Tech Stack](#-tech-stack)
 3. [Features](#-features)
-4. [Quick Start](#-quick-start)
-5. [Screenshots](#-screenshots)
+4. [Screenshots](#-screenshots)
+5. [Getting Started](#-getting-started)
 6. [Deployment](#-deployment)
+7. [Contact](#-contact)
 
 ---
 
-## 🚀 Introduction
+## 🙋‍♂️ About
 
-From dark mode support to responsive animations project showcase
+This is my personal portfolio website built with **React + TailwindCSS**. It showcases my journey as a frontend developer, highlighting the projects I’ve built — including a multilingual tourism app and a mobile beacon prototype. Designed with a space theme, dark mode, and interactive UI, this site represents my skills in modern frontend development.
 
-🎥 Watch the full tutorial: [YouTube](https://youtu.be/YOUR_VIDEO_ID)
-
----
-
-## ⚙️ Tech Stack
-
-* **React** – Component-based UI development
-* **Vite** – Lightning-fast build tool
-* **TailwindCSS** – Utility-first CSS for styling
-* **Lucide Icons** – Clean and beautiful icon pack
-* **Radix UI** – Accessible component primitives
-* **TypeScript (optional)** – Type safety and tooling
-* **GitHub & Vercel** – Deployment
+> ✨ I built this as part of my transition into professional web development in Vietnam and beyond.
 
 ---
 
-## ⚡️ Features
+## 🛠️ Tech Stack
 
-* 🌑 **Light/Dark Mode Toggle**
-  Save theme preference in local storage with beautiful transitions
-
-* 💫 **Animated Backgrounds**
-  Stars, meteors, scroll effects, and glowing UI elements
-
-* 📱 **Responsive Navigation**
-  Desktop and mobile menus with glassmorphism
-
-* 👨‍💻 **Hero & About Sections**
-  Showcase who you are with smooth intro animations and buttons
-
-* 📊 **Skills Grid**
-  Filterable progress bars and categories with animated width
-
-* 🖼️ **Projects Showcase**
-  Display screenshots, tech stacks, and GitHub/demo links
-
-* 📩 **Contact Section**
-  Social icons + responsive contact form with toast notifications
-
-* 🚀 **One-Click Deployment**
-  Easily host your site with Vercel and GitHub
+- ⚛️ **React** – Component-based UI
+- ⚡ **Vite** – Fast development build tool
+- 🎨 **TailwindCSS** – Utility-first styling
+- 🌐 **Zustand** – Lightweight global state management
+- 🌍 **i18next** – Multilingual language support
+- 🌠 **Cursor Pro** – Custom interactive cursor + animations
+- 💡 **Lucide Icons** – Icon library
+- ☁️ **Vercel** – Deployment
 
 ---
 
-## 👌 Quick Start
+## 🚀 Features
 
-### Prerequisites
-
-* [Node.js](https://nodejs.org/)
-* [Git](https://git-scm.com/)
-
-### Clone and Run
-
-```bash
-git clone https://github.com/yourusername/react-tailwind-portfolio.git
-cd react-tailwind-portfolio
-npm install
-npm run dev
-```
-
-Your app will be available at: [http://localhost:5173](http://localhost:5173)
+- 🌑 Dark mode with smooth toggle
+- 📱 Fully responsive layout (mobile + desktop)
+- 🌍 Multilingual-ready design (EN | JA | ZH | KO)
+- 🧠 Zustand global state (auth, language, etc.)
+- ⚡ Custom cursor and glowing UI effects
+- 💬 About, Skills, Projects, and Contact sections
+- 🔗 External links to GitHub & Live Projects
 
 ---
 
 ## 🖼️ Screenshots
 
-> 📸 Add screenshots of your Hero section, Projects grid, and Contact form here to show off your site.
+> Add your actual screenshots in `/public/screenshots/` and link them here.
+
+| Hero Section | Projects Grid | Contact Form |
+|--------------|---------------|---------------|
+| ![Hero](./screenshots/hero.png) | ![Projects](./screenshots/projects.png) | ![Contact](./screenshots/contact.png) |
+
+---
+
+## 🧑‍💻 Getting Started
+
+### Requirements
+
+- Node.js
+- Git
+
+### Run Locally
+
+```bash
+git clone https://github.com/kaungkhanthein1/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+Then open: [http://localhost:5173](http://localhost:5173)
 
 ---
 
 ## ☁️ Deployment
 
-### Deploy on Vercel
+### Deploy via Vercel (Recommended)
 
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
+1. Push your project to GitHub
+2. Go to [https://vercel.com](https://vercel.com)
+3. Import your repo
 4. Click **Deploy**
 
-Your live website will be hosted on a custom subdomain (e.g. `https://your-name.vercel.app`)
+Your site will be live at:  
+`https://your-name.vercel.app`
 
 ---
 
-## 🔗 Useful Links
+## 📬 Contact
 
-* [React Documentation](https://reactjs.org/)
-* [Tailwind CSS Docs](https://tailwindcss.com/)
-* [Lucide Icons](https://lucide.dev/)
-* [Radix UI](https://www.radix-ui.com/)
-* [Vite](https://vitejs.dev/)
-* [Vercel](https://vercel.com/)
+**Kaung Khant Hein**  
+📍 Based in Da Nang, Vietnam  
+💼 Aspiring Frontend Developer  
+📧 Email: your.email@example.com  
+🔗 [LinkedIn](https://linkedin.com/in/your-profile)  
+🔗 [GitHub](https://github.com/kaungkhanthein1)
 
 ---
 
-Let me know if you'd like me to generate a version with your actual GitHub repo, YouTube URL, or a banner image suggestion!
+## ⭐️ Acknowledgements
+
+- Design inspired by modern developer portfolios  
+- Based on [beautiful-react-tailwind-portfolio](https://github.com/some-repo) template  
+- Tutorials from YouTube and personal experience building real-world projects
