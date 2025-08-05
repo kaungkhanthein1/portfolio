@@ -37,8 +37,7 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Featured <span className="text-primary"> Projects </span>
+          Featured <span className="text-cosmic"> Projects </span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -50,7 +49,7 @@ export const ProjectsSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group glassmorphism-card overflow-hidden neon-border"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -63,13 +62,13 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span className="px-3 py-1 text-xs font-medium rounded-full glassmorphism border border-white/20 text-cosmic">
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1 text-cosmic"> {project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
@@ -78,14 +77,14 @@ export const ProjectsSection = () => {
                     <a
                       href={project.demoUrl}
                       target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-2 rounded-lg hover:glassmorphism"
                     >
                       <ExternalLink size={20} />
                     </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-2 rounded-lg hover:glassmorphism"
                     >
                       <Github size={20} />
                     </a>

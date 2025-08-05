@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -25,18 +25,20 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed w-full z-40 transition-all duration-300",
-        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+        "fixed w-full z-40 transition-all duration-500",
+        isScrolled 
+          ? "py-2 glassmorphism border-b border-white/10 shadow-[0_8px_32px_rgba(31,38,135,0.37)]" 
+          : "py-2 bg-transparent"
       )}
     >
       <div className="container flex items-center justify-between">
         <a
-          className="text-xl font-bold text-primary flex items-center"
+          className="text-xl font-bold flex items-center"
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> PedroTech </span>{" "}
-            Portfolio
+            <span className="text-cosmic font-bold"> KaungKhant&apos;s </span>
+            <span className="text-glow ml-1">Portfolio</span>
           </span>
         </a>
 
@@ -46,7 +48,7 @@ export const Navbar = () => {
             <a
               key={key}
               href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 px-3 py-2 rounded-lg hover:bg-white/5"
             >
               {item.name}
             </a>
@@ -65,11 +67,11 @@ export const Navbar = () => {
 
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
-            "transition-all duration-300 md:hidden",
+            "fixed inset-0 glassmorphism z-40 flex flex-col items-center justify-center",
+            "transition-all duration-500 md:hidden",
             isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+              ? "opacity-100 pointer-events-auto backdrop-blur-lg"
+              : "opacity-0 pointer-events-none backdrop-blur-none"
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
@@ -77,7 +79,7 @@ export const Navbar = () => {
               <a
                 key={key}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 px-6 py-3 rounded-lg hover:glassmorphism-card"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

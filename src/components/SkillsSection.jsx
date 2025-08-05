@@ -8,23 +8,15 @@ const skills = [
   { name: "React", level: 90, category: "frontend" },
   { name: "TypeScript", level: 85, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
-
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/GitHub", level: 80, category: "tools" },
+  { name: "Docker", level: 50, category: "tools" },
+  { name: "Figma", level: 80, category: "tools" },
+  { name: "VS Code", level: 85, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "tools"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -36,7 +28,7 @@ export const SkillsSection = () => {
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+          My <span className="text-cosmic"> Skills</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -45,10 +37,10 @@ export const SkillsSection = () => {
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-3 rounded-full transition-all duration-300 capitalize font-medium",
                 activeCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  ? "cosmic-button text-glow"
+                  : "glassmorphism text-foreground/80 hover:text-cosmic hover:neon-border"
               )}
             >
               {category}
@@ -60,15 +52,19 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="glassmorphism-card neon-border"
             >
               <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg"> {skill.name}</h3>
+                <h3 className="font-semibold text-lg text-cosmic"> {skill.name}</h3>
               </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+              <div className="w-full bg-white/10 h-3 rounded-full overflow-hidden border border-white/20">
                 <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
+                  className="h-3 rounded-full origin-left animate-[grow_1.5s_ease-out]"
+                  style={{ 
+                    width: skill.level + "%",
+                    background: 'linear-gradient(90deg, hsl(var(--cosmic-purple)) 0%, hsl(var(--cosmic-blue)) 100%)',
+                    boxShadow: '0 0 10px rgba(167, 139, 250, 0.5)'
+                  }}
                 />
               </div>
 
