@@ -4,32 +4,52 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4"
+      className="relative min-h-screen flex items-center justify-center px-4"
     >
-      <div className="container max-w-4xl mx-auto text-center z-10">
-        <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I&apos;m</span>
-            <span className="text-cosmic opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Kaung
-            </span>
-            <span className="text-glow text-cosmic ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              Khant Hein
-            </span>
-          </h1>
+      <div className="container max-w-6xl mx-auto z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Photo Section */}
+          <div className="flex justify-center lg:justify-start opacity-0 animate-fade-in">
+            <div className="relative">
+              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden neon-border bg-gradient-to-br from-cosmic-purple to-cosmic-blue p-1">
+                <div className="w-full h-full rounded-full overflow-hidden bg-background">
+                  <img
+                    src="/KKH.jpg"
+                    alt="Kaung Khant Hein"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+              </div>
+              {/* Floating elements around photo */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-cosmic-purple/20 blur-xl animate-pulse-subtle"></div>
+              <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-cosmic-blue/20 blur-xl animate-pulse-subtle" style={{ animationDelay: '1s' }}></div>
+            </div>
+          </div>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I create stellar web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
-          </p>
+          {/* Content Section */}
+          <div className="text-center lg:text-left space-y-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
+              <span className="opacity-0 animate-fade-in-delay-1"> Hi, I&apos;m</span>
+              <br />
+              <span className="text-cosmic opacity-0 animate-fade-in-delay-2 whitespace-nowrap">
+                Kaung Khant Hein
+              </span>
+            </h1>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
-              View My Work
-            </a>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl opacity-0 animate-fade-in-delay-4">
+              I create stellar web experiences with modern technologies.
+              Specializing in front-end development, I build interfaces that are
+              both beautiful and functional.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 opacity-0 animate-fade-in-delay-4">
+              <a href="#projects" className="cosmic-button">
+                View My Work
+              </a>
+              <a href="#contact" className="px-6 py-3 rounded-full neon-border text-cosmic hover:text-glow transition-all duration-300 font-medium">
+                Get In Touch
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,12 +1,11 @@
 import {
-  Instagram,
+  Facebook,
+  Github,
   Linkedin,
   Mail,
   MapPin,
   Phone,
   Send,
-  Twitch,
-  Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -90,17 +89,29 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4">
-                <a href="#" target="_blank">
-                  <Linkedin />
+                <a 
+                  href="https://www.linkedin.com/in/kaung-khant-536521297/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-2 rounded-lg hover:glassmorphism"
+                >
+                  <Linkedin size={24} />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
+                <a 
+                  href="https://www.facebook.com/share/19Z9kCiL44/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-2 rounded-lg hover:glassmorphism"
+                >
+                  <Facebook size={24} />
                 </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+                <a 
+                  href="https://github.com/kaungkhanthein1" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-2 rounded-lg hover:glassmorphism"
+                >
+                  <Github size={24} />
                 </a>
               </div>
             </div>
@@ -127,7 +138,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md glassmorphism neon-border focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Name.."
                 />
               </div>
 
