@@ -65,14 +65,26 @@ export const Navbar = () => {
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
         </button>
 
+        {isMenuOpen && (
+          <div
+            className="fixed inset-0 md:hidden"
+            style={{ 
+              zIndex: 45,
+              backgroundColor: 'rgba(0, 0, 0, 0.7)',
+              backdropFilter: 'blur(20px)',
+              WebkitBackdropFilter: 'blur(20px)'
+            }}
+          />
+        )}
         <div
           className={cn(
-            "fixed inset-0 glassmorphism z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 flex flex-col items-center justify-center",
             "transition-all duration-500 md:hidden",
             isMenuOpen
-              ? "opacity-100 pointer-events-auto backdrop-blur-lg"
-              : "opacity-0 pointer-events-none backdrop-blur-none"
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
           )}
+          style={{ zIndex: 46 }}
         >
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (

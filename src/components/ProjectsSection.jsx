@@ -3,30 +3,32 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
+    title: "Veteran Tour Guide App",
+    description: "A multilingual Southeast Asia tourists web app.The app features token-based authentication, global state with Zustand, dynamic language switching, and reusable custom components.",
+    image: "/projects/VeteranBanner.png",
+    tags: ["React", "Redux Toolkit", "TailwindCSS", "i18next", "Zustand", "Axios", "React Router", "JWT Auth"],
+    demoUrl: "https://vd-demo-11.netlify.app/",
     githubUrl: "#",
   },
+  
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Personal Developer Portfolio",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    "A space-themed interactive portfolio showcasing skills, experience, and projects. Built using a beautiful React + Tailwind starter template and customized with animated elements, responsive layout, and Markdown-powered project listings.",
+    image: "/projects/PortfolioBanner.png",
+    tags: ["React", "TailwindCSS", "Framer Motion", "Markdown"],
     demoUrl: "#",
     githubUrl: "#",
   },
+
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Beacon Proximity App",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    "A mobile app that detects nearby Bluetooth beacon signals and triggers contextual actions based on proximity. Developed as a prototype to explore React Native integration with real-world devices.",
+    image: "/projects/BeaconBanner.png",
+    tags: ["React Native", "Expo", "Bluetooth Beacon", "Location API"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -34,13 +36,13 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
+    <section id="projects" className="py-12 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-cosmic"> Projects </span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
           Here are some of my recent projects. Each project was carefully
           crafted with attention to detail, performance, and user experience.
         </p>
@@ -51,7 +53,7 @@ export const ProjectsSection = () => {
               key={key}
               className="group glassmorphism-card overflow-hidden neon-border"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-40 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -59,43 +61,41 @@ export const ProjectsSection = () => {
                 />
               </div>
 
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-3 py-1 text-xs font-medium rounded-full glassmorphism border border-white/20 text-cosmic">
+              <div className="p-4">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {project.tags.map((tag, index) => (
+                    <span key={index} className="px-2 py-1 text-xs font-medium rounded-full glassmorphism border border-white/20 text-cosmic">
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1 text-cosmic"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <h3 className="text-lg font-semibold mb-2 text-cosmic">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-3 leading-relaxed">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-2 rounded-lg hover:glassmorphism"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-2 rounded-lg hover:glassmorphism"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
+                <div className="flex space-x-3">
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-1.5 rounded-lg hover:glassmorphism"
+                  >
+                    <ExternalLink size={18} />
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    className="text-foreground/80 hover:text-cosmic hover:text-glow transition-all duration-300 p-1.5 rounded-lg hover:glassmorphism"
+                  >
+                    <Github size={18} />
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-6">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
