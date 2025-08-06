@@ -13,6 +13,7 @@ const skills = [
   { name: "Git/GitHub", level: 80, category: "tools" },
   { name: "Docker", level: 50, category: "tools" },
   { name: "Figma", level: 80, category: "tools" },
+  { name: "Cursor Pro", level: 90, category: "tools" },
   { name: "VS Code", level: 85, category: "tools" },
 ];
 
