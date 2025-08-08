@@ -4,14 +4,14 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4"
+      className="relative min-h-screen flex items-center justify-center px-4 py-20"
     >
       <div className="container max-w-6xl mx-auto z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Photo Section */}
-          <div className="flex justify-center lg:justify-start opacity-0 animate-fade-in">
+          <div className="flex justify-center lg:justify-start opacity-0 animate-fade-in order-1 lg:order-1">
             <div className="relative">
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden neon-border bg-gradient-to-br from-cosmic-purple to-cosmic-blue p-1">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden neon-border bg-gradient-to-br from-cosmic-purple to-cosmic-blue p-1">
                 <div className="w-full h-full rounded-full overflow-hidden bg-background">
                   <img
                     src="/KKH.jpg"
@@ -21,13 +21,13 @@ export const HeroSection = () => {
                 </div>
               </div>
               {/* Floating elements around photo */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-cosmic-purple/20 blur-xl animate-pulse-subtle"></div>
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-cosmic-blue/20 blur-xl animate-pulse-subtle" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute -top-4 -right-4 w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-cosmic-purple/20 blur-xl animate-pulse-subtle"></div>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-cosmic-blue/20 blur-xl animate-pulse-subtle" style={{ animationDelay: '1s' }}></div>
             </div>
           </div>
 
           {/* Content Section */}
-          <div className="text-center lg:text-left space-y-6">
+          <div className="text-center lg:text-left space-y-4 lg:space-y-6 order-2 lg:order-2">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in-delay-1"> Hi, I&apos;m</span>
               <br />
@@ -36,13 +36,13 @@ export const HeroSection = () => {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl opacity-0 animate-fade-in-delay-4">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl opacity-0 animate-fade-in-delay-4">
               I create stellar web experiences with modern technologies.
               Specializing in front-end development, I build interfaces that are
               both beautiful and functional.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 opacity-0 animate-fade-in-delay-4">
+            <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center lg:justify-start pt-2 lg:pt-4 opacity-0 animate-fade-in-delay-4">
               <a href="#projects" className="cosmic-button">
                 View My Work
               </a>

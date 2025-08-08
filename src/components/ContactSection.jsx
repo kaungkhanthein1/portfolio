@@ -138,7 +138,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md glassmorphism neon-border focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Name.."
+                  placeholder="Your Name.."
                 />
               </div>
 
@@ -156,7 +156,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md glassmorphism neon-border focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="Your Email.."
                 />
               </div>
 
