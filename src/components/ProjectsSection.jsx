@@ -22,13 +22,23 @@ const projects = [
     githubUrl: "#",
   },
 
+  // {
+  //   id: 3,
+  //   title: "Beacon Proximity App",
+  //   description:
+  //   "A mobile app that detects nearby Bluetooth beacon signals and triggers contextual actions based on proximity. Developed as a prototype to explore React Native integration with real-world devices.",
+  //   image: "/projects/BeaconBanner.png",
+  //   tags: ["React Native", "Expo", "Bluetooth Beacon", "Location API"],
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  // },
+
   {
-    id: 3,
-    title: "Beacon Proximity App",
-    description:
-    "A mobile app that detects nearby Bluetooth beacon signals and triggers contextual actions based on proximity. Developed as a prototype to explore React Native integration with real-world devices.",
+    id: 4,
+    title: "H5 Movie App",
+    description: "A mobile-first streaming and social web app with secure API requests, lazy-loaded routes, player/explore pages, search & recommendations, ads with rewards, sharing/invites, and a localized UI. Optimized for WebView with native hooks for a responsive, app-like experience.",
     image: "/projects/BeaconBanner.png",
-    tags: ["React Native", "Expo", "Bluetooth Beacon", "Location API"],
+    tags: ["React", "Redux Toolkit",  "RTK Query", "React Router", "Tailwind CSS", "i18next", "video-react", "Lottie", "CryptoJS + JSEncrypt/node-forge"],
     demoUrl: "#",
     githubUrl: "#",
   },
