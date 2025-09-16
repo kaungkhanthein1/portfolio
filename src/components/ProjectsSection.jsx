@@ -37,10 +37,10 @@ const projects = [
     id: 4,
     title: "H5 Movie App",
     description: "A mobile-first streaming and social web app with secure API requests, lazy-loaded routes, player/explore pages, search & recommendations, ads with rewards, sharing/invites, and a localized UI. Optimized for WebView with native hooks for a responsive, app-like experience.",
-    image: "/projects/BeaconBanner.png",
+    image: "/projects/H5Banner.png",
     tags: ["React", "Redux Toolkit",  "RTK Query", "React Router", "Tailwind CSS", "i18next", "video-react", "Lottie", "CryptoJS + JSEncrypt/node-forge"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://h5-movie-app.netlify.app/",
+    githubUrl: "https://github.com/kaungkhanthein1/h5",
   },
 ];
 
