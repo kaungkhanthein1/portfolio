@@ -8,7 +8,7 @@ const projects = [
     image: "/projects/VeteranBanner.png",
     tags: ["React", "Redux Toolkit", "TailwindCSS", "i18next", "Zustand", "Axios", "React Router", "JWT Auth"],
     demoUrl: "https://vd-demo-11.netlify.app/",
-    githubUrl: "#",
+    githubUrl: "https://github.com/kaungkhanthein1/veteran-driver-v1",
   },
   
   {
@@ -19,7 +19,7 @@ const projects = [
     image: "/projects/PortfolioBanner.png",
     tags: ["React", "TailwindCSS", "Framer Motion", "Markdown"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/kaungkhanthein1/portfolio",
   },
 
   // {
