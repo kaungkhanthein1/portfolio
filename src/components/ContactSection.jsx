@@ -80,7 +80,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Khuê Mỹ, Đà Nẵng, Vietnam
+                    Khuê Mỹ Dong, Đà Nẵng, Vietnam
                   </a>
                 </div>
               </div>
