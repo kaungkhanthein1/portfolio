@@ -33,15 +33,15 @@ const projects = [
   //   githubUrl: "#",
   // },
 
-  {
-    id: 4,
-    title: "H5 Movie App",
-    description: "A mobile-first streaming and social web app with secure API requests, lazy-loaded routes, player/explore pages, search & recommendations, ads with rewards, sharing/invites, and a localized UI. Optimized for WebView with native hooks for a responsive, app-like experience.",
-    image: "/projects/H5Banner.png",
-    tags: ["React", "Redux Toolkit",  "RTK Query", "React Router", "Tailwind CSS", "i18next", "video-react", "Lottie", "CryptoJS + JSEncrypt/node-forge"],
-    demoUrl: "https://h5-movie-project.netlify.app/",
-    githubUrl: "https://github.com/kaungkhanthein1/h5",
-  },
+  // {
+  //   id: 4,
+  //   title: "H5 Movie App",
+  //   description: "A mobile-first streaming and social web app with secure API requests, lazy-loaded routes, player/explore pages, search & recommendations, ads with rewards, sharing/invites, and a localized UI. Optimized for WebView with native hooks for a responsive, app-like experience.",
+  //   image: "/projects/H5Banner.png",
+  //   tags: ["React", "Redux Toolkit",  "RTK Query", "React Router", "Tailwind CSS", "i18next", "video-react", "Lottie", "CryptoJS + JSEncrypt/node-forge"],
+  //   demoUrl: "https://h5-movie-project.netlify.app/",
+  //   githubUrl: "https://github.com/kaungkhanthein1/h5",
+  // },
 ];
 
 export const ProjectsSection = () => {
@@ -57,13 +57,13 @@ export const ProjectsSection = () => {
           crafted with attention to detail, performance, and user experience.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
           {projects.map((project, key) => (
             <div
               key={key}
               className="group glassmorphism-card overflow-hidden neon-border"
             >
-              <div className="h-40 overflow-hidden">
+              <div className="h-80 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -109,7 +109,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/kaungkhanthein1"
           >
             Check My Github <ArrowRight size={16} />
           </a>
