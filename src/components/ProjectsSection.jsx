@@ -1,8 +1,30 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
+
   {
     id: 1,
+    title: "NextBite — Multi-Tenant QSR Platform",
+    description:
+      "A white-label Quick Service Restaurant platform built for scalability across multiple restaurant brands. Features a multi-tenant Go REST API, brand-specific theming, and AI-powered SDLC — converting business flows into ERD, Figma UI, and production-ready code. Built with React Native Expo for seamless cross-brand ordering experiences.",
+    image: "/projects/NextBiteBanner.jpg",
+    tags: ["Go", "React Native", "Expo", "TypeScript", "PostgreSQL", "Docker", "MCP", "Figma", "REST API", "Multi-Tenant"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/kaungkhanthein1/nextbite",
+  },
+
+  {
+    id: 2,
+    title: "Techzy — Full-Stack E-Commerce App",
+    description:
+      "An end-to-end mobile e-commerce platform built with an AI-powered SDLC: from business analysis and ERD design to atomic UI architecture and production deployment. Features push notifications via Firebase Cloud Messaging, persistent wishlists with MMKV, Myanmar & English i18n, and dark/light/system theming — all powered by a self-hosted Medusa.js backend in Docker.",
+    image: "/projects/TechzyBanner.jpg",
+    tags: ["React Native", "TypeScript", "Medusa.js", "PostgreSQL", "Docker", "Firebase", "FCM", "Notifee", "MMKV", "i18n", "Go", "MCP"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/kaungkhanthein1/techzy",
+  },
+  {
+    id: 3,
     title: "Veteran Tour Guide App",
     description: "A multilingual Southeast Asia tourists web app.The app features token-based authentication, global state with Zustand, dynamic language switching, and reusable custom components.",
     image: "/projects/VeteranBanner.png",
@@ -12,7 +34,7 @@ const projects = [
   },
   
   {
-    id: 2,
+    id: 4,
     title: "Personal Developer Portfolio",
     description:
     "A space-themed interactive portfolio showcasing skills, experience, and projects. Built using a beautiful React + Tailwind starter template and customized with animated elements, responsive layout, and Markdown-powered project listings.",
@@ -22,8 +44,9 @@ const projects = [
     githubUrl: "https://github.com/kaungkhanthein1/portfolio",
   },
 
+
   // {
-  //   id: 3,
+  //   id: 5,
   //   title: "Beacon Proximity App",
   //   description:
   //   "A mobile app that detects nearby Bluetooth beacon signals and triggers contextual actions based on proximity. Developed as a prototype to explore React Native integration with real-world devices.",
@@ -34,7 +57,7 @@ const projects = [
   // },
 
   // {
-  //   id: 4,
+  //   id: 6,
   //   title: "H5 Movie App",
   //   description: "A mobile-first streaming and social web app with secure API requests, lazy-loaded routes, player/explore pages, search & recommendations, ads with rewards, sharing/invites, and a localized UI. Optimized for WebView with native hooks for a responsive, app-like experience.",
   //   image: "/projects/H5Banner.png",
@@ -46,7 +69,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-12 px-4 relative">
+    <section id="projects" className="py-3 px-1 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-cosmic"> Projects </span>
@@ -63,7 +86,7 @@ export const ProjectsSection = () => {
               key={key}
               className="group glassmorphism-card overflow-hidden neon-border"
             >
-              <div className="h-80 overflow-hidden">
+              <div className="h-55 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}

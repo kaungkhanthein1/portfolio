@@ -12,25 +12,22 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-glow mb-4">
-               Aspiring Frontend Developer & Creative Tech Explorer
+              Full‑Stack Mobile & Web Engineer — Product-minded
             </h3>
 
             <p className="text-muted-foreground">
-            With hands-on experience building real-world applications, 
-            I specialize in crafting responsive, multilingual, 
-            and user-friendly web and mobile interfaces 
-            using modern frameworks like React and React Native.
-            My journey started with data entry and app content management,
-            evolved through mentorship from a senior full-stack developer, 
-            and led to my role as a front-end developer building tourism apps 
-            that support local discovery across Southeast Asia.
-
+              I build production-ready web and mobile applications with a focus on
+              performance, localization, and maintainable architecture. My
+              experience spans React, React Native (CLI & Expo), TypeScript,
+              Tailwind CSS, Go backends, and Medusa.js e-commerce platforms.
             </p>
 
             <p className="text-muted-foreground">
-            I thrive on clean design, reusable code, and constant learning — currently 
-            focused on React, Zustand, Tailwind CSS, and API integrations.
-
+              I deliver end-to-end features: ERD-backed API design, atomic UI,
+              multi-tenant backend patterns, offline-first local storage
+              (MMKV), push notifications (FCM / Notifee), and multilingual
+              experiences using i18n. I combine practical engineering with
+              AI-assisted workflows to accelerate design-to-code delivery.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -40,8 +37,8 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/kkh_resume.pdf"
-                download="kkh_resume.pdf"
+                href="/kkh_cv.pdf"
+                download="kkh_cv.pdf"
                 className="px-6 py-3 rounded-full neon-border text-cosmic hover:text-glow transition-all duration-300 font-medium"
               >
                 Download CV
@@ -56,28 +53,30 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg text-cosmic">Frontend Development</h4>
+                  <h4 className="font-semibold text-lg text-cosmic">Mobile & Native</h4>
                   <p className="text-muted-foreground">
-                  Building responsive web interfaces using React, Tailwind, 
-                  and component-based architecture for clean, scalable code.
+                    React Native (CLI & Expo), TypeScript, MMKV local storage,
+                    push notifications (FCM / Notifee), and mobile-first UX.
                   </p>
                 </div>
               </div>
             </div>
+
             <div className="glassmorphism-card neon-border">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full glassmorphism">
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg text-cosmic">Multilingual UI Integration</h4>
+                  <h4 className="font-semibold text-lg text-cosmic">Full‑Stack & Backend</h4>
                   <p className="text-muted-foreground">
-                  Creating dynamic language support with i18next and 
-                  translation files for Southeast Asian tourism audiences.
+                    Go REST APIs, Medusa.js, Node.js, PostgreSQL, Docker, and
+                    token-based authentication for scalable backends.
                   </p>
                 </div>
               </div>
             </div>
+
             <div className="glassmorphism-card neon-border">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full glassmorphism">
@@ -85,10 +84,10 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg text-cosmic">API Integration</h4>
+                  <h4 className="font-semibold text-lg text-cosmic">Architecture & AI</h4>
                   <p className="text-muted-foreground">
-                  Integrating REST APIs using Axios and React Query with support for loading states, 
-                  error handling, and token-based auth.
+                    ERD design, Atomic UI, MVP scoping and AI-assisted SDLC
+                    workflows (MCP integration, design-to-code acceleration).
                   </p>
                 </div>
               </div>
