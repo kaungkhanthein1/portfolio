@@ -13,6 +13,17 @@ const projects = [
     githubUrl: "https://github.com/kaungkhanthein1/nextbite",
   },
 
+   {
+  id: 3,
+  title: "Zawgyi Mythic Run — Multiplayer Browser Game",
+  description:
+  "A 2D/3D side-scrolling multiplayer game featuring a Myanmar alchemist with Levitate, Staff Strike, and Alchemic Pill abilities. Features 5 modes, including Treasure Hunt, Flying Zawgyi, Hidden Souls, and a 3D Alchemist's Race. Players connect smartphones as gamepads via QR, relaying real-time inputs through Socket.IO. Built with Phaser 3, Babylon.js, and Node.js/Express with bilingual support.",
+  image: "/projects/ZawgyiBanner.png",
+  tags: ["Phaser 3", "Babylon.js", "Socket.IO", "Node.js", "Express", "QR Controller", "Multiplayer", "2D/3D", "Mobile Gamepad"],
+  demoUrl: "#",
+  githubUrl: "https://github.com/kaungkhanthein1/zawgyi-mythic-run",
+  },
+
   {
     id: 2,
     title: "Techzy — Full-Stack E-Commerce App",
@@ -22,17 +33,6 @@ const projects = [
     tags: ["React Native", "TypeScript", "Medusa.js", "PostgreSQL", "Docker", "Firebase", "FCM", "Notifee", "MMKV", "i18n", "Go", "MCP"],
     demoUrl: "#",
     githubUrl: "https://github.com/kaungkhanthein1/techzy",
-  },
-
-  {
-  id: 3,
-  title: "Zawgyi Mythic Run — Multiplayer Browser Game",
-  description:
-  "A 2D/3D side-scrolling multiplayer game featuring a Myanmar alchemist with Levitate, Staff Strike, and Alchemic Pill abilities. Features 5 modes, including Treasure Hunt, Flying Zawgyi, Hidden Souls, and a 3D Alchemist's Race. Players connect smartphones as gamepads via QR, relaying real-time inputs through Socket.IO. Built with Phaser 3, Babylon.js, and Node.js/Express with bilingual support.",
-  image: "/projects/ZawgyiBanner.png",
-  tags: ["Phaser 3", "Babylon.js", "Socket.IO", "Node.js", "Express", "QR Controller", "Multiplayer", "2D/3D", "Mobile Gamepad"],
-  demoUrl: "#",
-  githubUrl: "https://github.com/kaungkhanthein1/zawgyi-mythic-run",
   },
   
   {
