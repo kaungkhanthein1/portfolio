@@ -78,17 +78,18 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className="py-12 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
           My <span className="text-cosmic"> Skills</span>
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        {/* Category filter */}
+        <div className="flex flex-wrap justify-center gap-3 mb-10">
           {categories.map((category, key) => (
             <button
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-3 rounded-full transition-all duration-300 capitalize font-medium",
+                "px-4 py-2 rounded-full transition-all duration-300 capitalize font-medium text-sm",
                 activeCategory === category
                   ? "cosmic-button text-glow"
                   : "glassmorphism text-foreground/80 hover:text-cosmic hover:border-primary/70"
@@ -99,27 +100,34 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {/* Skills grid — compact cards */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           {filteredSkills.map((skill, key) => (
-            <div key={key} className="glassmorphism-card neon-border">
-              <div className="text-left mb-4">
-                <h3 className="font-medium text-sm text-cosmic">{skill.name}</h3>
-              </div>
+            <div
+              key={key}
+              className="glassmorphism neon-border rounded-xl px-3 py-3 transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:shadow-[0_8px_32px_rgba(31,38,135,0.37)]"
+            >
+              {/* Skill name */}
+              <h3 className="font-medium text-xs text-cosmic leading-snug mb-2 line-clamp-2 min-h-[2.5rem]">
+                {skill.name}
+              </h3>
 
-              <div className="w-full bg-white/10 h-3 rounded-full overflow-hidden border border-white/20">
-                <div
-                  className="h-2 rounded-full origin-left animate-[grow_1s_ease-out]"
-                  style={{
-                    width: skill.level + "%",
-                    background:
-                      "linear-gradient(90deg, hsl(var(--cosmic-purple)) 0%, hsl(var(--cosmic-blue)) 100%)",
-                    boxShadow: "0 0 6px rgba(167, 139, 250, 0.35)",
-                  }}
-                />
-              </div>
-
-              <div className="text-right mt-1">
-                <span className="text-xs text-muted-foreground">{skill.level}%</span>
+              {/* Progress bar + percentage inline */}
+              <div className="flex items-center gap-2">
+                <div className="flex-1 bg-white/10 h-1.5 rounded-full overflow-hidden border border-white/10">
+                  <div
+                    className="h-full rounded-full animate-[grow_1s_ease-out]"
+                    style={{
+                      width: skill.level + "%",
+                      background:
+                        "linear-gradient(90deg, hsl(var(--cosmic-purple)) 0%, hsl(var(--cosmic-blue)) 100%)",
+                      boxShadow: "0 0 4px rgba(167, 139, 250, 0.4)",
+                    }}
+                  />
+                </div>
+                <span className="text-[10px] text-muted-foreground shrink-0 font-medium">
+                  {skill.level}%
+                </span>
               </div>
             </div>
           ))}
