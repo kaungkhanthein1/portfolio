@@ -83,13 +83,13 @@ export const SkillsSection = () => {
         </h2>
 
         {/* Category filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 sm:mb-10">
           {categories.map((category, key) => (
             <button
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-4 py-2 rounded-full transition-all duration-300 capitalize font-medium text-sm",
+                "px-3 py-1.5 sm:px-4 sm:py-2 rounded-full transition-all duration-300 capitalize font-medium text-xs sm:text-sm",
                 activeCategory === category
                   ? "cosmic-button text-glow"
                   : "glassmorphism text-foreground/80 hover:text-cosmic hover:border-primary/70"
@@ -101,11 +101,11 @@ export const SkillsSection = () => {
         </div>
 
         {/* Skills grid — compact cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3">
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="glassmorphism neon-border rounded-xl px-3 py-3 transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:shadow-[0_8px_32px_rgba(31,38,135,0.37)]"
+              className="glassmorphism neon-border rounded-xl px-2.5 py-2.5 sm:px-3 sm:py-3 transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:shadow-[0_8px_32px_rgba(31,38,135,0.37)]"
             >
               {/* Skill name */}
               <h3 className="font-medium text-xs text-cosmic leading-snug mb-2 line-clamp-2 min-h-[2.5rem]">

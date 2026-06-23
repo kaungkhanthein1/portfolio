@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
@@ -80,6 +81,12 @@ const projects = [
 ];
 
 export const ProjectsSection = () => {
+  const [expandedIds, setExpandedIds] = useState({});
+
+  const toggleDescription = (id) => {
+    setExpandedIds((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
   return (
     <section id="projects" className="py-6 px-4 lg:px-8 relative">
       <div className="container mx-auto max-w-7xl px-4">
@@ -92,13 +99,13 @@ export const ProjectsSection = () => {
           crafted with attention to detail, performance, and user experience.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
           {projects.map((project, key) => (
             <div
               key={key}
               className="group glassmorphism-card overflow-hidden neon-border"
             >
-              <div className="h-48 md:h-52 lg:h-40 overflow-hidden">
+              <div className="h-40 sm:h-48 md:h-52 lg:h-40 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -107,18 +114,32 @@ export const ProjectsSection = () => {
               </div>
 
               <div className="p-4 lg:p-3">
-                <div className="flex flex-wrap gap-2 mb-3">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
                   {project.tags.map((tag, index) => (
-                    <span key={index} className="px-2 py-1 text-xs font-medium rounded-full glassmorphism border border-white/20 text-cosmic">
+                    <span key={index} className="px-1.5 py-0.5 sm:px-2 sm:py-1 text-xs font-medium rounded-full glassmorphism border border-white/20 text-cosmic">
                       {tag}
                     </span>
                   ))}
                 </div>
 
                 <h3 className="text-lg md:text-xl font-semibold mb-2 text-cosmic">{project.title}</h3>
-                <p className="text-muted-foreground text-sm md:text-sm mb-3 leading-relaxed">
+                <p
+                  className={`text-muted-foreground text-sm md:text-sm mb-1 leading-relaxed ${
+                    expandedIds[project.id] ? "" : "line-clamp-4 sm:line-clamp-none"
+                  }`}
+                >
                   {project.description}
                 </p>
+                {project.description.length > 200 && (
+                  <button
+                    type="button"
+                    onClick={() => toggleDescription(project.id)}
+                    className="sm:hidden text-xs font-medium text-cosmic hover:text-glow transition-all duration-300 mb-3"
+                  >
+                    {expandedIds[project.id] ? "Show less" : "Read more"}
+                  </button>
+                )}
+                <div className="hidden sm:block mb-3" />
                 <div className="flex space-x-3">
                   <a
                     href={project.demoUrl}
